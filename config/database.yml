@@ -17,8 +17,6 @@ development:
   encoding: unicode
   database: SuperCRM_development
   pool: 5
-  username: bigos2
-  #don't need password with  authntication method set to trust
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
