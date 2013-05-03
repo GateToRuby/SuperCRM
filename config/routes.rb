@@ -5,7 +5,8 @@ SuperCRM::Application.routes.draw do
   match 'logout' => 'user_sessions#destroy'
   resource :user_session
   resource :account, :controller => "users"
-  
+
+  root :to => 'user_sessions#create'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
