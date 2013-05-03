@@ -7,7 +7,7 @@
     = csrf_meta_tags
   %body
     = yield
-    
+    = link_to 'Log me out', '/logout' if current_user
     #dump                       
       %p 
         current user:
