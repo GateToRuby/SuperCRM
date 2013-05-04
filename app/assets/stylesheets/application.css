@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+
+body { 
+   /* fix navbar covering content */
+   padding-top: 60px; 
+}
