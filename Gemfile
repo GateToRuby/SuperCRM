@@ -41,3 +41,4 @@ gem "authlogic", "~> 3.2.0"
 gem 'haml-rails'
 
 gem "twitter-bootstrap-rails"
+gem 'font-awesome-sass-rails'
