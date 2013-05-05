@@ -25,3 +25,24 @@
   
 %p= link_to 'Register', new_account_path
 %p=# link_to 'I forgot my password', new_password_reset_path
+
+
+.container
+  %form.form-signin
+    %h3.form-signin-heading Please sign in
+    .controls.input-icon
+      %i.icon-user-md
+      %input.input-block-level{:placeholder => "Email address", :type => "text"}/
+    .controls.input-icon
+      %i.icon-key
+      %input.input-block-level{:placeholder => "Password", :type => "password"}/
+    %label.checkbox
+      %input{:type => "checkbox", :value => "remember-me"}/
+      Remember me
+    %button.btn.btn-inverse.btn-block{:type => "submit"} Sign in
+    %h4 Forgot your password ?
+    %p
+      %a{:href => "#"} Click here
+      to reset your password.
+    %h5 Don't have an account yet ?
+    %button.btn.btn-success.btn-block{:type => "submit"} Create Account
