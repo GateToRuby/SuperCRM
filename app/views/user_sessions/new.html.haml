@@ -28,21 +28,20 @@
 
 
 .container
-  %form.form-signin
+  = form_for @user_session, :url => user_session_path, :html => {:class => 'form-signin'} do |f|
     %h3.form-signin-heading Please sign in
     .controls.input-icon
       %i.icon-user-md
-      %input.input-block-level{:placeholder => "Email address", :type => "text"}/
+      = f.text_field :username, :placeholder => 'Username', :class => 'input-block-level'
     .controls.input-icon
       %i.icon-key
-      %input.input-block-level{:placeholder => "Password", :type => "password"}/
+      = f.password_field :password, :placeholder => "Password", :class => 'input-block-level'
     %label.checkbox
-      %input{:type => "checkbox", :value => "remember-me"}/
+      = f.check_box :remember_me
       Remember me
-    %button.btn.btn-inverse.btn-block{:type => "submit"} Sign in
+    = f.submit 'Sign in', :class => "btn btn-inverse btn-block"
     %h4 Forgot your password ?
     %p
-      %a{:href => "#"} Click here
-      to reset your password.
+      = link_to 'Click here to reset your password.', '#'
     %h5 Don't have an account yet ?
-    %button.btn.btn-success.btn-block{:type => "submit"} Create Account
+    = button_to 'Create Account', '#', :class => 'btn btn-success btn-block'
