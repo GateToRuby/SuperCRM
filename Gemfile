@@ -40,5 +40,5 @@ gem 'jquery-rails'
 gem "authlogic", "~> 3.2.0"
 gem 'haml-rails'
 
-gem "twitter-bootstrap-rails"
+gem 'bootstrap-sass', '~> 2.3.1.0'
 gem 'font-awesome-sass-rails'

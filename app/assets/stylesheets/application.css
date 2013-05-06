@@ -10,8 +10,6 @@
  *
  *= require_self
  *= require_tree .
- *= require _font-awesome
- *= require_tree ../../../vendor/assets/stylesheets/.
  */
 
 body { 
