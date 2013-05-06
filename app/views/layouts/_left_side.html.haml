@@ -1,0 +1,235 @@
+.left-nav.clearfix
+  .left-primary-nav
+    %ul#myTab
+      %li.active
+        %a.icon-desktop{"data-original-title" => "Dashboard", :href => "#main"}
+      %li
+        %a.icon-th-large{"data-original-title" => "Forms", :href => "#forms"}
+      %li
+        %a.icon-beaker{"data-original-title" => "Features", :href => "#features"}
+      %li
+        %a.icon-list-alt{"data-original-title" => "UI Elements", :href => "#ui-elements"}
+      %li
+        %a.icon-file-alt{"data-original-title" => "Pages", :href => "#pages"}
+      %li
+        %a.icon-bar-chart{"data-original-title" => "Chart", :href => "#chart"}
+    %ul
+      %li
+        %a.icon-comments{"data-original-title" => "Chat", :href => "chat.html"}
+      %li
+        %a.icon-pencil{"data-original-title" => "WYSIWYG editor", :href => "text-editor.html"}
+  .responsive-leftbar
+    %i.icon-list
+  .left-secondary-nav.tab-content
+    #main.tab-pane.active
+      %h4.side-head Dashboard
+      .search-box
+        .input-append.input-icon
+          %input.search-input{:placeholder => "Search...", :type => "text"}/
+          %i.icon-search
+          %button.btn{:type => "button"} Go!
+      %ul.metro-sidenav.clearfix
+        %li
+          %span.notify-tip 30
+          %a.brown{:href => "#"}
+            %i.icon-user
+            %span User
+        %li
+          %a.orange{:href => "#"}
+            %i.icon-cogs
+            %span Settings
+        %li
+          %a.blue-violate{:href => "#"}
+            %i.icon-lightbulb
+            %span Support
+        %li
+          %a.magenta{:href => "#"}
+            %i.icon-bar-chart
+            %span Statistics
+        %li
+          %a.green{:href => "#"}
+            %i.icon-shopping-cart
+            %span Orders
+        %li
+          %a.bondi-blue{:href => "#"}
+            %i.icon-time
+            %span Events
+        %li
+          %a.dark-yellow{:href => "#"}
+            %i.icon-file-alt
+            %span Post
+        %li
+          %a.blue{:href => "#"}
+            %i.icon-copy
+            %span Documents
+      .side-widget
+        .board-widgets.light-blue
+          .board-widgets-head.clearfix
+            %h4.pull-left Bandwidth Usage
+            %a.widget-settings{:href => "#"}
+              %i.icon-cloud
+          .board-widgets-content
+            .progress.progress-striped.active.min.progress-info
+              .bar{:style => "width: 48%;"}
+            .stat-text.progress-stat
+              %i.progres-percent 48%
+              12000 MB / 25000 MB
+        .board-widgets.light-blue
+          .board-widgets-head.clearfix
+            %h4.pull-left Disk Usage
+            %a.widget-settings{:href => "#"}
+              %i.icon-hdd
+          .board-widgets-content
+            .progress.progress-striped.active.min.progress-success
+              .bar{:style => "width: 20%;"}
+            .stat-text.progress-stat
+              %i.progres-percent 20%
+              50GB / 250 GB
+        .board-widgets.gray
+          .board-widgets-head.clearfix
+            %h4.pull-left Visitors
+            %a.widget-settings{:href => "#"}
+              %i.icon-group
+          .board-widgets-content
+            .line-min-chart.min-chart
+            .stat-text
+              26458
+              %i.up.icon-sort-up
+              5%
+    #forms.tab-pane
+      %h4.side-head Forms
+      %ul#nav.accordion-nav
+        %li
+          %a{:href => "form-elements.html"}
+            %i.icon-list-alt
+            Form Elements
+            %span.notify-tip 50
+        %li.active
+          %a{:href => "form-components.html"}
+            %i.icon-th
+            Form Components
+        %li
+          %a{:href => "form-validation.html"}
+            %i.icon-ok-circle
+            Form Validation
+            %span Quisque commodo lectus sit amet sem
+        %li
+          %a{:href => "form-wizard.html"}
+            %i.icon-external-link
+            Wizard
+        %li
+          %a{:href => "text-editor.html"}
+            %i.icon-pencil
+            WYSIWYG editor
+            %span Quisque commodo lectus sit amet sem
+    #features.tab-pane
+      %h4.side-head Features
+      %ul.accordion-nav
+        %li
+          %a{:href => "tables.html"}
+            %i.icon-table
+            Basic Tables
+        %li
+          %a{:href => "table-cloth.html"}
+            %i.icon-table
+            Tables-Theme
+        %li
+          %a{:href => "data-tables.html"}
+            %i.icon-th
+            Data Tables
+        %li
+          %a{:href => "grid.html"}
+            %i.icon-columns
+            Grid
+        %li
+          %a{:href => "typography.html"}
+            %i.icon-font
+            Typography
+        %li
+          %a{:href => "calendar.html"}
+            %i.icon-calendar
+            Calendar
+        %li
+          %a{:href => "file-manager.html"}
+            %i.icon-folder-open
+            File Manager
+    #ui-elements.tab-pane
+      %h4.side-head UI Elements
+      %ul.accordion-nav
+        %li
+          %a{:href => "components-widgets.html"}
+            %i.icon-list-alt
+            UI Components
+        %li
+          %a{:href => "buttons-icons.html"}
+            %i.icon-th-large
+            Buttons & Icons
+    #pages.tab-pane
+      %h4.side-head Pages
+      %ul.accordion-nav
+        %li
+          %img{:src => "images/imgOffClosed.png"}/
+          %a{:href => "#"}
+            %i.icon-minus-sign
+            Error Pages
+          %ul
+            %li
+              %a{:href => "page-403.html"}
+                %i.icon-file-alt
+                403 Error Page
+            %li
+              %a{:href => "page-404.html"}
+                %i.icon-file-alt
+                404 Error Page
+            %li
+              %a{:href => "page-405.html"}
+                %i.icon-file-alt
+                405 Error Page
+            %li
+              %a{:href => "page-500.html"}
+                %i.icon-file-alt
+                500 Error Page
+            %li
+              %a{:href => "page-503.html"}
+                %i.icon-file-alt
+                503 Error Page
+        %li
+          %a{:href => "login.html"}
+            %i.icon-unlock
+            Login Page
+        %li
+          %a{:href => "profile.html"}
+            %i.icon-file
+            Profile Page
+        %li
+          %a{:href => "search-page.html"}
+            %i.icon-file
+            Search Page
+        %li
+          %a{:href => "invoice.html"}
+            %i.icon-file
+            Invoice Page
+        %li
+          %a{:href => "gallery.html"}
+            %i.icon-picture
+            Gallery
+        %li
+          %a{:href => "pricing.html"}
+            %i.icon-money
+            Pricing Page
+        %li
+          %a{:href => "chat.html"}
+            %i.icon-comments
+            Chat Page
+    #chart.tab-pane
+      %h4.side-head Charts
+      %ul.accordion-nav
+        %li
+          %a{:href => "flot-chart.html"}
+            %i.icon-bar-chart
+            Flot Charts
+        %li
+          %a{:href => "google-chart.html"}
+            %i.icon-google-plus-sign
+            Goolge
+            %span Quisque commodo lectus sit amet sem
